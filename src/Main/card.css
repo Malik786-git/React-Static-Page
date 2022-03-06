@@ -1,0 +1,22 @@
+.cardContainer{
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    width: 200px;
+    padding: 2px;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    border: 2px solid black;
+    color: white;
+}
+.cardContainer img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+
+}
+.cardContainer h5{
+    color: yellow;
+}
