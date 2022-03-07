@@ -5,6 +5,7 @@ import Card from './card';
 import './main.css';
 const Main = ()=>{
     return (
+     
         <div className='MainConatainer'>
               <Card 
               image={boyOne}
@@ -27,6 +28,7 @@ const Main = ()=>{
               about='Very Motivated and experienced employee, very peaceful deal with the clients.'
                />
         </div>
+  
     );
 }
 
