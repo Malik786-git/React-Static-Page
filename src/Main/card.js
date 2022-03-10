@@ -30,3 +30,5 @@ Card.propTypes = {
 Card.propTypes = {
     image: 'team'
 }
+
+
