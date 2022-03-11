@@ -1,7 +1,7 @@
 import React, { useState } from "react";
+import CustomHook from "./cusHook";
+const Table = () => {
 
-const Table = ()=>{
-    
     // styling....
     const TableStyle = {
         textAlign: 'center',
@@ -10,7 +10,7 @@ const Table = ()=>{
         padding: '20px'
     }
     const btnStyle = {
-        padding:'5px',
+        padding: '5px',
         border: '1px solid white',
         backgroundColor: 'blue',
         color: 'white',
@@ -18,41 +18,44 @@ const Table = ()=>{
         borderRadius: '5px',
         fontWeight: 'bold'
     }
-     let TableNo = 0;
+    let TableNo = 10;
+
     function getTable(e) {
-       TableNo = e.target.value;
+        TableNo = e.target.value;
     }
     function selectTable() {
-          
+        // console.log(TableNo);
     }
 
+    const data = CustomHook();
 
-
-    const [num, Increament] = useState(0);
-
-    const handleIncreament = () => { 
-         Number(TableNo);
-        return Increament(num + TableNo); 
-        console.log(TableNo);
-    } 
-
-   
     return (
         <div style={TableStyle}>
-        {/* Get table number from input field */}
+            {/* Get table number from input field */}
             <h2>Enter Table Number Which You Want to Generate Table</h2>
-            <input 
-            type='number'
-            onChange={getTable} />
-            <br/>
-            <br/>
-            <button style={btnStyle} onClick={selectTable}>Click To Update Table</button> 
+            <input
+                type='number'
+                onChange={getTable}
+            />
+            <br />
+            <br />
+            <button
+                style={btnStyle}
+                onClick={selectTable}
+            >Click To Update Table
+            </button>
             {/* table counter here... */}
-                            <h1>Table = {num}</h1>
-                            <button style={btnStyle} onClick={handleIncreament} >NEXT</button>
+            <h1>Table = {data.num}</h1>
+
+            <button
+                style={btnStyle}
+                onClick={data.Increament}
+            >NEXT
+            </button>
+
         </div>
     )
 }
 
-export default Table;
 
+export default Table;
