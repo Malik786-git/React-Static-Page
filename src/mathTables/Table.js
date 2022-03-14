@@ -5,14 +5,14 @@ const Table = () => {
     // styling....
     const TableStyle = {
         textAlign: 'center',
-        backgroundColor: 'blue',
+        backgroundColor: '#003067',
         color: 'white',
         padding: '20px'
     }
     const btnStyle = {
         padding: '5px',
         border: '1px solid white',
-        backgroundColor: 'blue',
+        backgroundColor: '#003067',
         color: 'white',
         fontSize: '12px',
         borderRadius: '5px',

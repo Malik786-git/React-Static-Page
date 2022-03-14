@@ -3,14 +3,14 @@ import React, {useEffect,useState} from "react";
 const Counter = (props)=>{
     const CounterStyle = {
         textAlign: 'center',
-        backgroundColor: 'blue',
+        backgroundColor: '#004789',
         color: 'white',
         padding: '20px'
     }
     const btnStyle = {
         padding:'5px',
         border: '2px solid white',
-        backgroundColor: 'blue',
+        backgroundColor: '#004789',
         color: 'white',
         fontSize: '18px',
         borderRadius: '5px'
